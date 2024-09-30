@@ -43,6 +43,6 @@ public class Transaksi {
         System.out.println("Jumlah: Rp" + jumlah);
         System.out.println("Jenis: " + jenis);
         System.out.println("Keterangan: " + keterangan);
-        System.out.println("--------------------------"); // Garis pemisah antar transaksi
+        System.out.println("--------------------------"); 
     }
 }
