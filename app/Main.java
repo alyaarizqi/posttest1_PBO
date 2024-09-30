@@ -40,9 +40,6 @@ public class Main {
                         String jenis = scanner.nextLine();
                         System.out.print("Masukkan keterangan: ");
                         String keterangan = scanner.nextLine();
-                        // Meminta tanggal dan status
-                        System.out.print("Masukkan tanggal transaksi: ");
-                        System.out.print("Masukkan status transaksi: ");
                         // Tambah transaksi baru
                         KeuanganPribadi.tambahTransaksi(nominal, jenis, keterangan);
                     }
@@ -68,7 +65,7 @@ public class Main {
                         KeuanganPribadi.updateTransaksi(keteranganUpdate);
                     }
                     
-                    case 5 -> keuanganPribadi.tampilkanInfo(); // Tampilkan info pemilik
+                    case 5 -> keuanganPribadi.tampilkanInfo(); 
                     
                     case 6 -> System.out.println("Terima kasih!");
                     
