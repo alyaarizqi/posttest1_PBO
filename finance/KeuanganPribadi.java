@@ -9,13 +9,15 @@ public class KeuanganPribadi {
     static ArrayList<Transaksi> daftarTransaksi = new ArrayList<>();
     
     // Properti tambahan
-    private final String pemilik; // Nama pemilik
+    private final String pemilik;  // Nama pemilik
     private final String mataUang; // Jenis mata uang
+    private double saldoAwal;      // Properti baru: saldo awal
 
-    // Constructor
-    public KeuanganPribadi(String pemilik, String mataUang) {
+    // Constructor dengan tiga parameter
+    public KeuanganPribadi(String pemilik, String mataUang, double saldoAwal) {
         this.pemilik = pemilik;
         this.mataUang = mataUang;
+        this.saldoAwal = saldoAwal; // Inisialisasi saldo awal
     }
 
     // Method untuk menambah transaksi
@@ -37,10 +39,11 @@ public class KeuanganPribadi {
         }
     }
 
-    // Metode baru untuk menampilkan informasi
+    // Metode untuk menampilkan informasi pemilik, mata uang, dan saldo awal
     public void tampilkanInfo() {
         System.out.println("Pemilik: " + pemilik);
         System.out.println("Mata Uang: " + mataUang);
+        System.out.println("Saldo Awal: " + saldoAwal); // Tambahkan saldo awal ke dalam tampilan
     }
 
     // Method untuk menghapus transaksi berdasarkan keterangan
