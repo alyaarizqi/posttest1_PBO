@@ -5,7 +5,7 @@ public class Transaksi {
     private double jumlah;
     private String jenis; // Pendapatan atau Pengeluaran
     private String keterangan; 
-
+    
     // Constructor
     public Transaksi(double jumlah, String jenis, String keterangan) {
         this.jumlah = jumlah;
