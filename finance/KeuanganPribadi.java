@@ -9,9 +9,9 @@ public class KeuanganPribadi {
     static ArrayList<Transaksi> daftarTransaksi = new ArrayList<>();
     
     // Properti tambahan
-    private final String pemilik; 
+    private final String pemilik;  
     private final String mataUang; 
-    private final double saldoAwal;    
+    private final double saldoAwal;     
 
     // Constructor dengan tiga parameter
     public KeuanganPribadi(String pemilik, String mataUang, double saldoAwal) {
