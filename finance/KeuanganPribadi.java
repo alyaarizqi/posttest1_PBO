@@ -7,6 +7,16 @@ import manajemenKeuangan.models.Transaksi;
 public class KeuanganPribadi {
     // Static ArrayList untuk menyimpan daftar transaksi
     static ArrayList<Transaksi> daftarTransaksi = new ArrayList<>();
+    
+    // Properti tambahan
+    private final String pemilik; // Nama pemilik
+    private final String mataUang; // Jenis mata uang
+
+    // Constructor
+    public KeuanganPribadi(String pemilik, String mataUang) {
+        this.pemilik = pemilik;
+        this.mataUang = mataUang;
+    }
 
     // Method untuk menambah transaksi
     public static void tambahTransaksi(double nominal, String jenis, String keterangan) {
@@ -25,6 +35,12 @@ public class KeuanganPribadi {
                 transaksi.tampilkanTransaksi();
             }
         }
+    }
+
+    // Metode baru untuk menampilkan informasi
+    public void tampilkanInfo() {
+        System.out.println("Pemilik: " + pemilik);
+        System.out.println("Mata Uang: " + mataUang);
     }
 
     // Method untuk menghapus transaksi berdasarkan keterangan
