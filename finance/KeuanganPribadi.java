@@ -9,15 +9,15 @@ public class KeuanganPribadi {
     static ArrayList<Transaksi> daftarTransaksi = new ArrayList<>();
     
     // Properti tambahan
-    private final String pemilik;  // Nama pemilik
-    private final String mataUang; // Jenis mata uang
-    private final double saldoAwal;      // Properti baru: saldo awal
+    private final String pemilik; 
+    private final String mataUang; 
+    private final double saldoAwal;    
 
     // Constructor dengan tiga parameter
     public KeuanganPribadi(String pemilik, String mataUang, double saldoAwal) {
         this.pemilik = pemilik;
         this.mataUang = mataUang;
-        this.saldoAwal = saldoAwal; // Inisialisasi saldo awal
+        this.saldoAwal = saldoAwal; 
     }
 
     // Method untuk menambah transaksi
