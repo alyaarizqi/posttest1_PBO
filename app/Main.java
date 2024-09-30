@@ -12,9 +12,10 @@ public class Main {
             String pemilik = scanner.nextLine();
             System.out.print("Masukkan jenis mata uang: ");
             String mataUang = scanner.nextLine();
+            double saldoAwal = 0;
             
             // Membuat objek KeuanganPribadi dengan informasi pemilik dan mata uang
-            KeuanganPribadi keuanganPribadi = new KeuanganPribadi(pemilik, mataUang);
+            KeuanganPribadi keuanganPribadi = new KeuanganPribadi(pemilik, mataUang,saldoAwal);
             
             int pilihan;
             
@@ -41,13 +42,11 @@ public class Main {
                         String keterangan = scanner.nextLine();
                         // Meminta tanggal dan status
                         System.out.print("Masukkan tanggal transaksi: ");
-                        String tanggal = scanner.nextLine();
                         System.out.print("Masukkan status transaksi: ");
-                        String status = scanner.nextLine();
                         // Tambah transaksi baru
                         KeuanganPribadi.tambahTransaksi(nominal, jenis, keterangan);
                     }
-                    
+
                     case 2 -> // Lihat transaksi
                         KeuanganPribadi.lihatTransaksi();
                         
@@ -80,4 +79,3 @@ public class Main {
         }
     }
 }
-
