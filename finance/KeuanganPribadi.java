@@ -11,7 +11,7 @@ public class KeuanganPribadi {
     // Properti tambahan
     private final String pemilik;  // Nama pemilik
     private final String mataUang; // Jenis mata uang
-    private double saldoAwal;      // Properti baru: saldo awal
+    private final double saldoAwal;      // Properti baru: saldo awal
 
     // Constructor dengan tiga parameter
     public KeuanganPribadi(String pemilik, String mataUang, double saldoAwal) {
